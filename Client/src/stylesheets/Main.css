@@ -42,21 +42,60 @@ span {
 }
 
 #device-selector {
-    height: 60px;
-    aspect-ratio: 4;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    margin: 20px;
-    font-size: 30px;
-    font-weight: 600;
-    color: #ffffff;
-    background-color: #1D1D1D;
-    padding: 10px;
+    appearance: none; /* Removes the default browser styles for select */
+    -webkit-appearance: none; /* For WebKit browsers (Chrome, Safari) */
+    -moz-appearance: none; /* For Firefox */
     
+    height: 60px; /* Set the height of the select box */
+    aspect-ratio: 4; /* Set width relative to height */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center content horizontally */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px; /* Add margin around the select box */
+    
+    font-size: 30px; /* Set font size */
+    font-weight: 600; /* Set font weight */
+    color: #ffffff; /* Text color */
+    background-color: #1D1D1D; /* Dark background for the select box */
+    
+    padding: 10px 20px; /* Padding inside the select, adjusted for better appearance */
+    border: 1px solid #33BCE4; /* Light blue border for styling */
+    cursor: pointer; /* Change cursor to pointer when hovering */
+    
+    /* Custom arrow styling */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6"><path fill="white" d="M0 0l5 6 5-6z"/></svg>'); /* Custom arrow as SVG */
+    background-repeat: no-repeat; /* Don't repeat the arrow */
+    background-position: right 10px center; /* Position the arrow */
+    background-size: 12px; /* Set size for the arrow */
+  }
+  
+  /* Hover effect */
+  #device-selector:hover {
+    background-color: #333333; /* Darken background on hover */
+    border-color: #000BFF; /* Change border color on hover */
+  }
+  
+  /* Focus state */
+  #device-selector:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #33BCE4; /* Add a blue border on focus */
+    box-shadow: 0 0 8px #33BCE4; /* Add a subtle glow effect */
+  }
+  
+  /* Remove arrow for IE and Edge */
+  #device-selector::-ms-expand {
+    display: none;
+  }
+  
+  /* Optional styling for the options inside the dropdown */
+  #device-selector option {
+    background-color: #1D1D1D; /* Dark background for options */
+    color: #ffffff; /* White text color for options */
+    font-size: 20px; /* Same font size for consistency */
+    font-weight: 600; /* Same font weight for consistency */
+  }
 
 
-}
 
 option {
     text-align: center;

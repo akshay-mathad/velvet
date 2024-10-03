@@ -8,7 +8,16 @@
     flex-direction: column;
 }
 
+#l-support{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 90px;
+    text-shadow: 10px 0px 10px #000000;
 
+}
 
 .support-grp {
     display: flex;
@@ -22,6 +31,7 @@
 .support-name {
     text-align: center;
     color: #7b7fdb;
+    text-shadow: 10px 0px 10px #000000;
     font-size: 50px;
 }
 
@@ -31,4 +41,6 @@
     justify-content: center;
     font-size: 50px;
     color: #2F38FF;
+    text-shadow: 10px 0px 10px #000000;
+
 }

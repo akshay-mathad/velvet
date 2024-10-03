@@ -1,73 +1,163 @@
-/* Profile.css */
+/* stylesheets/Profile.css */
+
+/* General styles */
+body {
+    color: #000000; /* White text for contrast */
+    font-family: Arial, sans-serif; /* Font family for readability */
+}
+
 .main-profile {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    background-image: url('../images/MacBook\ Pro\ 16_\ -\ 7.png');
-    /* background-color: #ccc; */
-    background-position: center -2500px;
-    background-size: auto; /* Dark gray background */
-    color: #ffffff; /* White text */
-   
+    text-align: center;
+    max-width: 1000px;
+    min-width: 400px; /* Limit the width of the profile form */
+    margin: 50px auto; /* Center the form */
+    padding: 30px; /* Padding around the form */
+    padding-right: 50px;
+    background-color: #383838; /* Dark background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
 }
 
-.profile-form {
-    width: 100%;
-    max-width: 600px;
-    background-color: #2f39ffb0; /* Blue background for the form */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.profile-head{
+    font-size: xx-large;
+    padding-bottom: 20px;
+    text-decoration: underline;
 }
 
-.profile-form div {
+#profile-display{
+    text-align: left;
+}
+
+.edit-sec{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-align: left;
+}
+
+.profile-sec {
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px; /* Space between form fields */
 }
 
-.profile-form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #ffffff; /* White text */
+strong{
+    color: #58a1d5;
+    text-align: left;
+}
+.profile-label {
+    display: block; /* Labels on a new line */
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Make labels bold */
+    color: #000000;
+    text-align: left;
 }
 
-.profile-form input[type="text"],
-.profile-form input[type="email"],
-.profile-form input[type="file"],
-.profile-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    background-color: #383838; /* Dark gray input background */
-    color: #ffffff; /* White text */
+.input-name{
+    width: 150px;
+    text-align: right;
+    color: aliceblue;
 }
 
-.profile-form textarea {
-    resize: vertical;
+input[type="text"] {
+    margin-left: auto;
+    min-width: 300px; /* White text for labels */
+    max-width: 600px;
+    padding: 10px; /* Padding inside the inputs */
+    border: 1px solid #33BCE4; /* Border color */
+    border-radius: 5px; /* Rounded corners for inputs */
+    background-color: #ffffff; /* Input background color */
+    color: #000000;
+    text-align: left; /* Input text color */
 }
 
-.profile-form span {
-    display: block;
-    padding: 10px;
-    background-color: #383838; /* Dark gray background */
-    border-radius: 4px;
-    color: #ffffff; /* White text */
+/* Basic styling for textarea */
+textarea {
+    min-width: 300px;
+    height: 100px; /* Fixed height */
+    padding: 10px; /* Padding inside the textarea */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #33BCE4; /* Border color */
+    background-color: #ffffff; /* Dark background */
+    color: #000000; /* White text color */
+    font-size: 1rem; /* Adjust the font size */
+    resize: vertical; /* Allow vertical resizing */
+    overflow-y: auto; /* Enable vertical scrolling when content overflows */
+  }
+  
+  /* Customizing the scrollbar */
+  textarea::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+  
+  textarea::-webkit-scrollbar-track {
+    background: #383838; /* Background of the scrollbar track */
+  }
+  
+  textarea::-webkit-scrollbar-thumb {
+    background-color: #010304; /* Color of the scrollbar handle */
+    border-radius: 10px; /* Rounded corners for the scrollbar handle */
+  }
+  
+  textarea::-webkit-scrollbar-thumb:hover {
+    background-color: #000BFF; /* Darker color when hovered */
+  }
+  
+  /* Placeholder styling */
+  textarea::placeholder {
+    color: #000000a8; /* Placeholder text color */
+    opacity: 0.8; /* Slight transparency for placeholder */
+  }
+
+/* Placeholder styling */
+input::placeholder {
+    color: #000000c0; /* Placeholder text color */
+    opacity: 0.8; /* Slight transparency */
 }
 
-.profile-form button {
-    padding: 10px 20px;
-    background-color: #ffffff; /* White button */
-    color: #545ad7; /* Blue text */
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-right: 10px;
+.profile-btn {
+    padding: 10px; /* Button padding */
+    background-color: #305ed4; /* Button background color */
+    color: #ffffff; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s;
+    font-size: 20px; /* Transition for hover effect */
 }
 
-.profile-form button:hover {
-    background-color: #cccccc; /* Lighter gray on hover */
+.profile-btn:hover {
+    background-color: #000BFF; /* Change background color on hover */
+}
+
+/* Success and error messages */
+.success-message {
+    color: #33BCE4; /* Success message color */
+    margin-top: 10px; /* Space above success message */
+}
+
+.error-message {
+    color: #FF0000; /* Red color for error messages */
+    margin-top: 10px; /* Space above error message */
+}
+
+/* Footer styles */
+footer {
+    background-color: #383838; /* Footer background color */
+    color: #000000; /* Footer text color */
+    text-align: center; /* Center align footer text */
+    padding: 15px; /* Padding for footer */
+    position: relative; /* Positioning for footer */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+}
+
+footer p {
+    margin: 0; /* Remove default margin for footer paragraphs */
 }
