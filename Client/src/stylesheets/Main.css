@@ -1,0 +1,245 @@
+#bg-comp-1 {
+    border-radius: 120px;
+    width: 90%;
+    height: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url('../images/MacBook\ Pro\ 16_\ -\ 7.png');
+    background-position: center top;
+    background-size: auto;
+}
+
+#downloader {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    border-radius: 60px;
+    align-items: center;
+    background: url('../images/main-page-component-1.png');
+    background-repeat: no-repeat;
+    background-size: 1510px;
+    height: auto;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    padding-bottom: 30px;
+}
+
+span {
+    color: #1D1D1D;
+}
+
+#l1 {
+    margin-top: 70px;
+    font-size: 100px;
+    padding: 100px;
+    text-align: center;
+}
+
+#device-selector {
+    height: 60px;
+    aspect-ratio: 4;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #1D1D1D;
+    padding: 10px;
+    
+
+
+}
+
+option {
+    text-align: center;
+}
+
+#download-btn {
+    width: 600px;
+    height: 100px;
+    border-radius: 50px;
+    color: #ffffff;
+    background: #1D1D1D;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    gap: 20px;
+}
+
+#t1 {
+    margin-top: 20px;
+    font-size: 25px;
+    margin-bottom: 90px;
+    font-weight: 500;
+}
+
+#l2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 90px;
+}
+
+#t2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#features-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.feature {
+    background: hsla(194, 77%, 55%, 1);
+    background: linear-gradient(0deg, hsla(194, 77%, 55%, 1) 0%, hsla(237, 100%, 50%, 1) 100%);
+    background: -moz-linear-gradient(0deg, hsla(194, 77%, 55%, 1) 0%, hsla(237, 100%, 50%, 1) 100%);
+    background: -webkit-linear-gradient(0deg, hsla(194, 77%, 55%, 1) 0%, hsla(237, 100%, 50%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#33BCE4", endColorstr="#000BFF", GradientType=1);
+
+
+    width: 350px;
+    height: 350px;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 50px rgb(94, 100, 209);
+
+}
+
+.feature-title {
+    font-size: 40px;
+    width: 400px;
+    margin-top: 40px;
+}
+
+.feature-alt {
+    width: 400px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#feedback-block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#l3 {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 90px;
+}
+
+#t3 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    width: 800px;
+
+}
+
+#comments {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 40px;
+
+}
+
+.comment {
+    background-color: #ffffff;
+    color: black;
+    font-size: larger;
+    padding: 20px;
+    border-radius: 30px;
+    flex-basis: calc(33.33% - 120px);
+    flex-grow: 1;
+    height: auto;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+}
+
+.name {
+    font-size: 40px;
+}
+
+.username {
+    font-size: 25px;
+    opacity: 0.5;
+    font-weight: 400;
+}
+
+.comment-line {
+    margin-top: 20px;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#plan-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#l4 {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 90px;
+}
+
+#t4 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+}

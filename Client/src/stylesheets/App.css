@@ -1,0 +1,19 @@
+.App{
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+
+    transform: scale(0.75); /*Scale down to 75% */
+    transform-origin: top left; /* Adjust the origin to top left */
+    width: 133.33%; /* Compensate for the scaling */
+    height: 100vh;
+
+    /* justify-content: center;
+    align-items: center; */
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+

@@ -1,0 +1,73 @@
+/* Profile.css */
+.main-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/MacBook\ Pro\ 16_\ -\ 7.png');
+    /* background-color: #ccc; */
+    background-position: center -2500px;
+    background-size: auto; /* Dark gray background */
+    color: #ffffff; /* White text */
+   
+}
+
+.profile-form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #2f39ffb0; /* Blue background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-form div {
+    margin-bottom: 15px;
+}
+
+.profile-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff; /* White text */
+}
+
+.profile-form input[type="text"],
+.profile-form input[type="email"],
+.profile-form input[type="file"],
+.profile-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #383838; /* Dark gray input background */
+    color: #ffffff; /* White text */
+}
+
+.profile-form textarea {
+    resize: vertical;
+}
+
+.profile-form span {
+    display: block;
+    padding: 10px;
+    background-color: #383838; /* Dark gray background */
+    border-radius: 4px;
+    color: #ffffff; /* White text */
+}
+
+.profile-form button {
+    padding: 10px 20px;
+    background-color: #ffffff; /* White button */
+    color: #545ad7; /* Blue text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.profile-form button:hover {
+    background-color: #cccccc; /* Lighter gray on hover */
+}

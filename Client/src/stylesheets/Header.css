@@ -1,0 +1,44 @@
+.main-header{
+    min-width: 100vh;
+    height: 90px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#ValvetTitle{
+    width:max-content;
+    height: 80%;
+    size: 70%;
+    position: relative;
+    left: 0%;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    font-size: 180%;
+}
+
+.Login{
+    display: flex;
+    align-items: center;
+    font-size: 130%;
+}
+
+.Login:hover, .profile:hover {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+.page{
+    position: relative;
+    margin-left: auto;
+    display: flex;
+    text-align: right;
+    flex-direction: row;
+    gap: 40px;
+    color: #ffffff;
+    font-size: 30px;
+}

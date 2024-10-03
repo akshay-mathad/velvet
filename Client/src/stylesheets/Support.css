@@ -1,0 +1,34 @@
+.main-support {
+    background-image: url('../images/MacBook\ Pro\ 16_\ -\ 7.png');
+    background-position:center -800px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.support-grp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.support-name {
+    text-align: center;
+    color: #7b7fdb;
+    font-size: 50px;
+}
+
+.support-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #2F38FF;
+}

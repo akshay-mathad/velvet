@@ -1,0 +1,37 @@
+
+.main-footer {
+    height: auto;
+    padding: 30px;
+    display: flex;
+    background-color: #383838;
+    flex-direction: row;
+    align-items: center;
+    margin-top: auto;
+}
+
+#ValvetTitle {
+    height: 60%;
+    position: relative;
+    left: 0%;
+}
+
+.support:hover, .faq:hover {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+.links {
+    position: relative;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.v-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-top: 100px;
+}
+
+#eclipse-8 {
+    width: 7%;
+    height: 7%;
+}
+
+head {
+    text-align: center;
+    font-size: 60px;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.email-input {
+    background-color: #D9D9D9;
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    font-size: large;
+    padding: 15px;
+}
+
+.continue {
+    background-color: #286ed8;
+    color: rgba(1, 0, 0, 0.8);
+    width: 530px;
+    height: auto;
+    border-radius: 20px;
+    font-size: large;
+    padding: 15px;
+}
+
+.other-login {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.direct-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.signUp-btn{
+    width: 530px;
+    aspect-ratio: 11;
+    margin: 10px;
+    font-size: large;
+    background-color: rgb(208, 132, 77);
+    color: rgb(0, 0, 0,0.8);
+}
+
+#googleLogo {
+    width: 30px;
+    height: 30px;
+}
+
+button {
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+    opacity: 0.5;
+    background-color: rgba(13, 6, 6, 0.45);
+    color: azure;
+    margin: 5px;
+}
+
+
+.h-container {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#seperator{
+    color: aliceblue;
+}
+
+
+.line {
+    width: 200px;
+    height: 2px;
+    background-color: white;
+    color: white;
+    border-radius: 40%;
+    margin: 5px;
+}

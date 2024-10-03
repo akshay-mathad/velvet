@@ -1,0 +1,55 @@
+.main-faq {
+    background-image: url("../images/MacBook\ Pro\ 16_\ -\ 7.png");
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.faq-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#l8 {
+    font-size: 60px;
+    margin: 50px;
+}
+
+.qna {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.qna-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.question {
+    text-align: left;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 30px;
+    color: blueviolet;
+    text-shadow: 1px 1px 2px white;
+}
+
+.answer {
+    text-align: left;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 30px;
+}

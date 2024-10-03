@@ -1,0 +1,119 @@
+/* html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  background-color: #1c1c1c;
+} */
+
+
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1c1c1c;
+  transform: scale(1.5); /*Scale down to 75% */
+  transform-origin: top left; /* Adjust the origin to top left */
+  width: 66.66%;
+}
+
+.signup-box {
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.signup-h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.signup-input[type="username"],
+.signup-input[type="email"],
+.signup-input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: #d9d9d9;
+  color: #333;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.signup-input::placeholder {
+  color: #aaa;
+}
+
+.continue-btn:hover {
+  background-color: #365aab;
+}
+
+.signup-button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  background-color: #22457a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #26468b;
+  color: #ffffff;
+}
+
+.success {
+  color: #4caf50;
+  margin-bottom: 1rem;
+}
+
+.error {
+  color: #f44336;
+  margin-bottom: 1rem;
+}
+
+.signup-label {
+  color: #777;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+  display: block;
+}
+
+.signup-a {
+  color: #26468b;
+  text-decoration: none;
+}
+
+.signup-a:hover {
+  text-decoration: underline;
+}
+
+.signup-login-button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  background-color: #22457a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-login-button:hover {
+  background-color: #365aab;
+}
