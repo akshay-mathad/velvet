@@ -40,12 +40,12 @@ router.post("/profile", async (req, res) => {
 });
 
 // GET: Fetch user profile
-router.get("/profile/:username", async (req, res) => {
-  const { username } = req.params; // Extract username from URL
+router.get("/profile/:email", async (req, res) => {
+  const { email } = req.params; // Extract username from URL
 
   try {
     // Check if the user exists by username
-    const user = await User.findOne({ username });
+      const user = await User.findOne({ email });
 
     if (!user) {
       // If the user is not found, send a 404 error

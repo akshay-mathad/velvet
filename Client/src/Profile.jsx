@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import './stylesheets/Profile.css';
+import "./stylesheets/Profile.css";
 
 function Profile() {
   const [profileData, setProfileData] = useState(null); // Store fetched profile data
@@ -8,7 +8,7 @@ function Profile() {
     username: "",
     name: "",
     mobile: "",
-    comment: ""
+    comment: "",
   }); // Store form input data
   const [isEditMode, setIsEditMode] = useState(false); // Toggle between view and edit mode
   const [error, setError] = useState(""); // Display error messages
@@ -16,9 +16,12 @@ function Profile() {
 
   // Fetch profile data on component load
   useEffect(() => {
+    const email = localStorage.getItem("email");
     const fetchProfileData = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/users/profile/${formData.username}`);
+        const response = await axios.get(
+          `http://localhost:5000/api/users/profile/${email}`
+        );
         setProfileData(response.data);
         setFormData(response.data); // Set form data with fetched profile data
       } catch (error) {
@@ -27,11 +30,9 @@ function Profile() {
       }
     };
 
-    // Call fetch function only if username is present
-    if (formData.username) {
-      fetchProfileData();
-    }
-  }, [formData.username]); // Dependency on username to trigger fetch
+    // Fetch data as soon as the component mounts
+    fetchProfileData();
+  }, []); // No dependencies to trigger fetch on component mount
 
   // When the "Edit" button is clicked, toggle the form into edit mode
   const handleEditClick = () => {
@@ -68,7 +69,11 @@ function Profile() {
       setIsEditMode(false); // Switch back to view mode
     } catch (error) {
       console.error("Submit Error:", error); // Log error for debugging
-      setError(error.response ? error.response.data.message : "An error occurred while saving.");
+      setError(
+        error.response
+          ? error.response.data.message
+          : "An error occurred while saving."
+      );
     }
   };
 
@@ -79,11 +84,22 @@ function Profile() {
       {profileData && !isEditMode ? (
         // Display profile data when not in edit mode
         <div id="profile-display">
-          <p className="edit-sec"><strong>Username: </strong> {profileData.username}</p>
-          <p className="edit-sec"> <strong>Name: </strong> {profileData.name}</p>
-          <p className="edit-sec"><strong>Mobile: </strong> {profileData.mobile}</p>
-          <p className="edit-sec"><strong>Comment: </strong> {profileData.comment}</p>
-          <button className="profile-btn" onClick={handleEditClick}>Edit</button>
+          <p className="edit-sec">
+            <strong>Username: </strong> {profileData.username}
+          </p>
+          <p className="edit-sec">
+            {" "}
+            <strong>Name: </strong> {profileData.name}
+          </p>
+          <p className="edit-sec">
+            <strong>Mobile: </strong> {profileData.mobile}
+          </p>
+          <p className="edit-sec">
+            <strong>Comment: </strong> {profileData.comment}
+          </p>
+          <button className="profile-btn" onClick={handleEditClick}>
+            Edit
+          </button>
         </div>
       ) : (
         // Display the form when in edit mode
@@ -95,7 +111,6 @@ function Profile() {
               name="username"
               value={formData.username}
               onChange={handleChange}
-              required
             />
           </label>
           <label className="edit-sec">
@@ -105,7 +120,6 @@ function Profile() {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              required
             />
           </label>
           <label className="edit-sec">
@@ -115,7 +129,6 @@ function Profile() {
               name="mobile"
               value={formData.mobile}
               onChange={handleChange}
-              required
             />
           </label>
           <label className="edit-sec">
@@ -131,7 +144,9 @@ function Profile() {
           {success && <p className="success-message">{success}</p>}
           {error && <p className="error-message">{error}</p>}
 
-          <button className="profile-btn" type="submit">Save</button>
+          <button className="profile-btn" type="submit">
+            Save
+          </button>
         </form>
       )}
     </div>
