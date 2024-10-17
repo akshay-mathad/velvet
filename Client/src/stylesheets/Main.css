@@ -46,11 +46,12 @@ span {
     -webkit-appearance: none; /* For WebKit browsers (Chrome, Safari) */
     -moz-appearance: none; /* For Firefox */
     
-    height: 60px; /* Set the height of the select box */
+    width: 500px;
+    height: 100px; /* Set the height of the select box */
     aspect-ratio: 4; /* Set width relative to height */
     align-items: center; /* Align items vertically */
     justify-content: center; /* Center content horizontally */
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 20px; /* Rounded corners */
     margin: 20px; /* Add margin around the select box */
     
     font-size: 30px; /* Set font size */
@@ -92,33 +93,40 @@ span {
     background-color: #1D1D1D; /* Dark background for options */
     color: #ffffff; /* White text color for options */
     font-size: 20px; /* Same font size for consistency */
-    font-weight: 600; /* Same font weight for consistency */
+    font-weight: 200; /* Same font weight for consistency */
+
+
   }
 
+  #l5{
+    font-size: xxx-large;
+    color: #ffffff;
+  }
 
 
 option {
     text-align: center;
+    margin-left: 0;
 }
 
 #download-btn {
-    width: 600px;
-    height: 100px;
-    border-radius: 50px;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
     color: #ffffff;
     background: #1D1D1D;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 20px;
     gap: 20px;
 }
 
 #t1 {
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 25px;
-    margin-bottom: 90px;
+    margin-bottom: 40px;
     font-weight: 500;
 }
 

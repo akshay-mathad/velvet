@@ -1,107 +1,166 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+/* login.css */
 
-.v-container {
+.main-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+
+.login-v-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
-    margin-top: 100px;
+    justify-content: center;
+    height: 110vh; /* Full height of the viewport */
+    background-color: #383838;
+    width: 40%;
+    text-align: center; /* Center align text */
+    border-radius: 10px;
 }
 
 #eclipse-8 {
-    width: 7%;
-    height: 7%;
+    width: 60px; /* Set the size of the logo */
+    margin-bottom: 20px; /* Space below the logo */
 }
 
-head {
-    text-align: center;
-    font-size: 60px;
+h1 {
+    font-size: 24px; /* Font size for the heading */
+    color: #007bff; /* Dark text color */
+    margin-bottom: 30px; /* Space below the heading */
 }
 
 .email-form {
+  
+    width: 300px; /* Fixed width for the form */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+    gap: 15px; /* Space between form elements */
 }
 
 .email-input {
-    background-color: #D9D9D9;
-    width: 500px;
-    height: auto;
-    border-radius: 20px;
-    font-size: large;
-    padding: 15px;
+    padding: 10px; /* Padding inside the input */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for input text */
+    width: 100%; /* Full width */
+}
+
+.email-input:focus {
+    border-color: #007bff; /* Border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.l8{
+    margin-top: 2%;
+}
+
+.tnc {
+    font-size: 12px; /* Small text for terms */
+    color: #666; /* Light text color */
+}
+
+.tnc a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.tnc a:hover {
+    text-decoration: underline; /* Underline on hover */
 }
 
 .continue {
-    background-color: #286ed8;
-    color: rgba(1, 0, 0, 0.8);
-    width: 530px;
-    height: auto;
-    border-radius: 20px;
-    font-size: large;
-    padding: 15px;
+    background-color: #007bff; /* Primary button color */
+    color: #fff; /* White text */
+    padding: 10px; /* Padding inside the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Button font size */
+}
+
+.continue:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.error {
+    color: #ff0000; /* Red for error messages */
+    margin-top: 10px; /* Space above error message */
+}
+
+.success {
+    color: #28a745; /* Green for success messages */
+    margin-top: 10px; /* Space above success message */
+}
+
+.signUp-btn {
+    background-color: transparent; /* Transparent background */
+    border: none; /* Remove border */
+    color: #007bff; /* Link color */
+    cursor: pointer; /* Pointer cursor */
+    margin-top: 10px; /* Space above the button */
+}
+
+.signUp-btn:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.h-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0; /* Vertical spacing */
+}
+
+.line {
+    height: 1px; /* Thin line */
+    background-color: #ccc; /* Gray line */
+    flex-grow: 1; /* Stretch line to fill space */
+    margin: 0 10px; /* Space around the line */
+}
+
+#seperator {
+    font-size: 14px; /* Separator font size */
+    color: #666; /* Light text color */
 }
 
 .other-login {
     display: flex;
-    flex-direction: row;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 10px; /* Space between the buttons */
 }
 
 .direct-login {
+    flex-grow: 1; /* Allow buttons to grow */
+    padding: 10px; /* Padding inside the buttons */
+    border: 1px solid #ccc; /* Border around the buttons */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 14px; /* Button font size */
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
-    font-size: 30px;
-    padding: 10px;
+    justify-content: center;
+    gap: 5px; /* Space between icon and text */
 }
 
-.signUp-btn{
-    width: 530px;
-    aspect-ratio: 11;
-    margin: 10px;
-    font-size: large;
-    background-color: rgb(208, 132, 77);
-    color: rgb(0, 0, 0,0.8);
+.direct-login:hover {
+    background-color: #f1f1f1; /* Slightly darker background on hover */
+}
+
+#google-login {
+    color: #db4437; /* Google button color */
 }
 
 #googleLogo {
-    width: 30px;
-    height: 30px;
+    font-size: 18px; /* Google icon size */
 }
 
-button {
-    width: 250px;
-    height: auto;
-    border-radius: 20px;
-    opacity: 0.5;
-    background-color: rgba(13, 6, 6, 0.45);
-    color: azure;
-    margin: 5px;
+#apple-login {
+    color: #000000; /* Apple button color */
 }
 
-
-.h-container {
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-#seperator{
-    color: aliceblue;
-}
-
-
-.line {
-    width: 200px;
-    height: 2px;
-    background-color: white;
-    color: white;
-    border-radius: 40%;
-    margin: 5px;
+#appleLogo {
+    font-size: 18px; /* Apple icon size */
 }

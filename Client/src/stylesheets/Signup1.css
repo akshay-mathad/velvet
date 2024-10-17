@@ -1,119 +1,107 @@
-/* html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: "Arial", sans-serif;
-  background-color: #1c1c1c;
-} */
+/* Signup1.css */
 
+.signup-form{
+  display: flex;
+  flex-direction: column;
 
-
+}
 .signup-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  min-height: 100vh;
-  background-color: #1c1c1c;
-  transform: scale(1.5); /*Scale down to 75% */
-  transform-origin: top left; /* Adjust the origin to top left */
-  width: 66.66%;
+  height: 100vh;
+  background-color: #1C1C1C; /* Light background color */
 }
 
 .signup-box {
-  padding: 2rem;
-  text-align: center;
-  width: 100%;
-  max-width: 400px;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: #383838; /* White background for the form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 50px; /* Padding around the content */
+  width: 40%; /* Fixed width for the form */
+  text-align: center; /* Center align text */
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+#eclipse-8-signup {
+  width: 60px; /* Set a width for the logo */
+  margin-bottom: 20px; /* Space below the logo */
 }
 
 .signup-h2 {
-  color: #ffffff;
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  font-weight: bold;
+  margin-bottom: 20px; /* Space below the heading */
+  font-size: 24px; /* Heading size */
+  color: #007bff; /* Darker text color */
 }
 
-.signup-input[type="username"],
-.signup-input[type="email"],
-.signup-input[type="password"] {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 1rem;
-  border-radius: 20px;
-  border: 1px solid #ccc;
-  background-color: #d9d9d9;
-  color: #333;
-  font-size: 1rem;
-  box-sizing: border-box;
+.signup-input {
+  min-width: 300px; /* Full width of the box */
+  padding: 10px; /* Padding inside the input */
+  margin-bottom: 15px; /* Space between inputs */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
 }
 
-.signup-input::placeholder {
-  color: #aaa;
-}
-
-.continue-btn:hover {
-  background-color: #365aab;
+.signup-input:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
 }
 
 .signup-button {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 1rem;
-  background-color: #22457a;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  width: 100%; /* Full width of the button */
+  padding: 10px; /* Padding inside the button */
+  margin-left: 0;
+  background-color: #007bff; /* Primary color */
+  color: #fff; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor */
 }
 
 .signup-button:hover {
-  background-color: #26468b;
-  color: #ffffff;
-}
-
-.success {
-  color: #4caf50;
-  margin-bottom: 1rem;
-}
-
-.error {
-  color: #f44336;
-  margin-bottom: 1rem;
+  background-color: #0056b3; /* Darker shade on hover */
 }
 
 .signup-label {
-  color: #777;
-  font-size: 0.9rem;
-  margin-top: 1.5rem;
-  display: block;
-}
-
-.signup-a {
-  color: #26468b;
-  text-decoration: none;
-}
-
-.signup-a:hover {
-  text-decoration: underline;
+  margin-top: 15px; /* Space above the label */
+  display: block; /* Block display */
+  font-size: 14px; /* Font size */
+  color: #666; /* Lighter text color */
 }
 
 .signup-login-button {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 1rem;
-  background-color: #22457a;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  background-color: transparent; /* Transparent background */
+  border: none; /* Remove border */
+  color: #007bff; /* Primary color text */
+  cursor: pointer; /* Pointer cursor */
 }
 
 .signup-login-button:hover {
-  background-color: #365aab;
+  text-decoration: underline; /* Underline on hover */
+}
+
+.error {
+  color: #ff0000; /* Red for error messages */
+  margin-bottom: 15px; /* Space below error message */
+}
+
+.success {
+  color: #28a745; /* Green for success messages */
+  margin-bottom: 15px; /* Space below success message */
+}
+
+.signup-a {
+  color: #007bff; /* Primary color */
+  text-decoration: none; /* No underline */
+}
+
+.signup-a:hover {
+  text-decoration: underline; /* Underline on hover */
 }

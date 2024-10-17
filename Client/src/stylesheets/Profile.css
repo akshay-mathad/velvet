@@ -130,6 +130,7 @@ input::placeholder {
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s;
     font-size: 20px; /* Transition for hover effect */
+    width: 100px;
 }
 
 .profile-btn:hover {

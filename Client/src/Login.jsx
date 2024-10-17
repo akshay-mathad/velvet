@@ -48,8 +48,8 @@ function Login() {
   
 
   return (
-    <div>
-      <div className="v-container">
+    <div className="main-login">
+      <div className="login-v-container">
         <img id="eclipse-8" src={Eclipse8} alt="Eclipse 8 logo" />
         <h1>Log in or create an account</h1>
         <form className="email-form" onSubmit={handleLogin}>
@@ -77,7 +77,7 @@ function Login() {
         </form>
         {error && <p className="error">{error}</p>}
         {success && <p className="success">{success}</p>}
-        <label>Don't have an account yet?</label>
+        <label className="l8">Don't have an account yet?</label>
         <button className="signUp-btn" onClick={handleSignUpRedirect}>Sign Up</button>
         <div className="h-container">
           <div className="line"></div>

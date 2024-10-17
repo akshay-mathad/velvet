@@ -12,25 +12,48 @@ function main() {
 
   // const navigate = useNavigate(); // Use the hook here
 
+  const handleDownload = () => {
+    const selectedOption = document.getElementById("device-selector").value;
+    if (selectedOption === "null") {
+      alert("Please select a valid option.");
+    } else {
+      let downloadFile;
+      switch (selectedOption) {
+        case "PC":
+          downloadFile = bgComponent1;
+          break;
+        case "Tablet":
+          downloadFile = ftImg1;
+          break;
+        case "Mobile":
+          downloadFile = ftImg2;
+          break;
+        default:
+          break;
+      }
+      const link = document.createElement('a');
+      link.href = downloadFile;
+      link.setAttribute('download', `Valvet-app for ${selectedOption}`); // Fixed template string interpolation
+      link.click();
+    }
+  };
+
   return (
     <div className="main-main">
       <div id="downloader">
         <label id="l1">
           Meet Your New <span>Productivity</span> Assistant
         </label>
+        <label id="l5">To download the Valvet application on your selected device:</label>
         <select name="device-selector" id="device-selector">
-          <option value="PC">PC</option>
-          <option value="Tablet">Tablet</option>
-          <option value="Mobile">Mobile</option>
+          <option className="decvice-option" value="null">Select your Device</option>
+          <option className="decvice-option" value="PC">PC</option>
+          <option className="decvice-option" value="Tablet">Tablet</option>
+          <option className="decvice-option" value="Mobile">Mobile</option>
         </select>
-        <a
-          id="download-btn"
-          href={bgComponent1}
-          download="main-page-component-1.png"
-        >
-          Download For 
-          <HiArrowLongUp />
-        </a>
+        <button id="download-btn" onClick={handleDownload}>
+          Download
+        </button>
         <label id="t1">Get 3 months free trail now</label>
         
       </div>
@@ -40,7 +63,7 @@ function main() {
       <div id="features-list">
         <div id="feature-1" className="features">
           <div className="feature">
-            <img src={ftImg1}></img>{" "}
+            <img src={ftImg1} alt="Feature 1"></img>{" "}
           </div>
           <div id="feature-1-title" className="feature-title">
             Voice Commands
@@ -52,7 +75,7 @@ function main() {
         </div>
         <div id="feature-2" className="features">
           <div className="feature">
-            <img src={ftImg2}></img>
+            <img src={ftImg2} alt="Feature 2"></img>
           </div>
           <div id="feature-2-title" className="feature-title">
             Background Efficiency
@@ -64,7 +87,7 @@ function main() {
         </div>
         <div id="feature-3" className="features">
           <div className="feature">
-            <img src={ftImg3}></img>
+            <img src={ftImg3} alt="Feature 3"></img>
           </div>
           <div id="feature-3-title" className="feature-title">
             SOS Feature
@@ -84,7 +107,7 @@ function main() {
         <div id="comments">
           <div className="comment">
             <div className="profile-content">
-              <img src={pfImg1} className="profile-image"></img>
+              <img src={pfImg1} className="profile-image" alt="Profile"></img>
               <div className="user-info">
                 <div className="name">Galian Gunther</div>
                 <div className="username">@galian_gunther</div>
@@ -96,7 +119,7 @@ function main() {
           </div>
           <div className="comment">
             <div className="profile-content">
-              <img src={pfImg1} className="profile-image"></img>
+              <img src={pfImg1} className="profile-image" alt="Profile"></img>
               <div className="user-info">
                 <div className="name">Galian Gunther</div>
                 <div className="username">@galian_gunther</div>
@@ -109,7 +132,7 @@ function main() {
           </div>
           <div className="comment">
             <div className="profile-content">
-              <img src={pfImg1} className="profile-image"></img>
+              <img src={pfImg1} className="profile-image" alt="Profile"></img>
               <div className="user-info">
                 <div className="name">Galian Gunther</div>
                 <div className="username">@galian_gunther</div>
@@ -121,7 +144,7 @@ function main() {
           </div>
           <div className="comment">
             <div className="profile-content">
-              <img src={pfImg1} className="profile-image"></img>
+              <img src={pfImg1} className="profile-image" alt="Profile"></img>
               <div className="user-info">
                 <div className="name">Galian Gunther</div>
                 <div className="username">@galian_gunther</div>
@@ -134,7 +157,7 @@ function main() {
           </div>
           <div className="comment">
             <div className="profile-content">
-              <img src={pfImg1} className="profile-image"></img>
+              <img src={pfImg1} className="profile-image" alt="Profile"></img>
               <div className="user-info">
                 <div className="name">Galian Gunther</div>
                 <div className="username">@galian_gunther</div>
@@ -147,7 +170,7 @@ function main() {
           </div>
           <div className="comment">
             <div className="profile-content">
-              <img src={pfImg1} className="profile-image"></img>
+              <img src={pfImg1} className="profile-image" alt="Profile"></img>
               <div className="user-info">
                 <div className="name">Galian Gunther</div>
                 <div className="username">@galian_gunther</div>
